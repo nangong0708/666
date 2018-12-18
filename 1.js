@@ -8,7 +8,7 @@ MoveRightLayer('AdLayer2');
 }
 function MoveLeftLayer(layerName) {
 var x = 5;
-var y = 100;// ×ó²à¹ã¸æ¾àÀëÒ³Ê×¸ß¶È
+var y = 100;// å·¦ä¾§å¹¿å‘Šè·ç¦»é¡µé¦–é«˜åº¦
 var diff = (document.body.scrollTop + y - document.all.AdLayer1.style.posTop)*.40;
 var y = document.body.scrollTop + y - diff;
 eval("document.all." + layerName + ".style.posTop = parseInt(y)");
@@ -17,7 +17,7 @@ setTimeout("MoveLeftLayer('AdLayer1');", 20);
 }
 function MoveRightLayer(layerName) {
 var x = 5;
-var y = 100;// ÓÒ²à¹ã¸æ¾àÀëÒ³Ê×¸ß¶È
+var y = 100;// å³ä¾§å¹¿å‘Šè·ç¦»é¡µé¦–é«˜åº¦
 var diff = (document.body.scrollTop + y - document.all.AdLayer2.style.posTop)*.40;
 var y = document.body.scrollTop + y - diff;
 eval("document.all." + layerName + ".style.posTop = y");
@@ -25,8 +25,8 @@ eval("document.all." + layerName + ".style.posRight = x");
 setTimeout("MoveRightLayer('AdLayer2');", 20);
 }
 
-document.write("<div id=AdLayer1 style='position: fixed;top: 50%;left: 0;  margin-top: -100px;visibility:hidden;z-index:1'><a href='http://www.baidu.com' target='_blank'><img src=images/1.gif border='0'></a></div>"
-+"<div id=AdLayer2 style='position: fixed;top: 50%; right: 0; margin-top: -100px;visibility:hidden;z-index:1'><a href='http://www.baidu.com' target='_blank'><img src=images/2.gif border='0'></a></div>");
+document.write("<div id=AdLayer1 style='position: fixed;top: 50%;left: 0;  margin-top: -100px;visibility:hidden;z-index:1'><a href='http://www.163.com' target='_blank'><img src=http://121.12.92.31:8080/images/2.gif border='0'></a></div>"
++"<div id=AdLayer2 style='position: fixed;top: 50%; right: 0; margin-top: -100px;visibility:hidden;z-index:1'><a href='http://www.163.com' target='_blank'><img src=http://121.12.92.31:8080/images/2.gif border='0'></a></div>");
 initEcAd()
 
 // JavaScript Document
